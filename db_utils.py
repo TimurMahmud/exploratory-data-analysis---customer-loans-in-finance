@@ -34,5 +34,4 @@ rds_connector = RDSDatabaseConnector(credentials)
 rds_connector.connect()
 loan_df = rds_connector.extract_data_to_dataframe('loan_payments')
 rds_connector.save_data_to_csv(loan_df, 'loan.csv')
-print(loan_df)
-print(loan_df.shape)
+
