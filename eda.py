@@ -176,3 +176,6 @@ transformed_df = df_transformer.df.copy()
 
 # Display information about the transformed DataFrame
 print(transformed_df.info())
+
+# Save transformed df as csv
+transformed_df.to_csv('transformed_df.csv', index=False)
